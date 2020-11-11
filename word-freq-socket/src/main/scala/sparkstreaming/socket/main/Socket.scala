@@ -14,8 +14,8 @@ object Socket {
   def main(args: Array[String]): Unit = {
 
     val sparkConf = new SparkConf().setAppName("NetworkWordCount")
-      //.setMaster("local[2]")
-      .setMaster("spark://127.0.0.1:7077")
+      .setMaster("local[2]")
+     // .setMaster("spark://127.0.0.1:7077")
     val ssc = new StreamingContext(sparkConf, Seconds(1))
 
     // Create a socket stream on target ip:port and count the
