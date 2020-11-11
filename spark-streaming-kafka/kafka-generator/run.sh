@@ -1,0 +1,1 @@
+java -cp target/kafka-generator-1.0-SNAPSHOT-jar-with-dependencies.jar sparkstreaming.kafka.generator.Producer kafkaOperation 172.25.6.23:9091,172.25.6.22:9091,172.25.6.21:9091
